@@ -1,0 +1,6 @@
+#remove the comment below to include it
+.idea
+.vscode
+
+# ignores DS_Store
+.DS_Store

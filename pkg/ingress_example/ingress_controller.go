@@ -32,7 +32,8 @@ type controller struct {
 	// Lister是Informer的cache
 	ingressLister networkingv1.IngressLister
 	serviceLister corev1.ServiceLister
-	queue         workqueue.RateLimitingInterface
+	// 是业务相关的workQueue?
+	queue workqueue.RateLimitingInterface
 }
 
 func NewController(client kubernetes.Interface, serviceInformer v1informer.ServiceInformer, ingInformer networkinginformer.IngressInformer) *controller {

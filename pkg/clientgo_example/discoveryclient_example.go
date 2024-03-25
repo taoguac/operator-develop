@@ -1,4 +1,4 @@
-package clientgo_example
+package main
 
 import (
 	"fmt"

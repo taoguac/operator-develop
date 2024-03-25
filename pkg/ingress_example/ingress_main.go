@@ -12,7 +12,8 @@ import (
 func RunInMain() {
 	// 构建和运行ingress的controller
 	// 1. 读取config
-	config, err := clientcmd.BuildConfigFromFlags("", clientcmd.RecommendedHomeFile)
+	config, err := clientcmd.BuildConfigFromFlags("",
+		"/Users/gutao/gutaodev/gocode/operator-develop/config/minikube_kubeconfig")
 	if err != nil {
 		inClusterConfig, err := rest.InClusterConfig()
 		if err != nil {
